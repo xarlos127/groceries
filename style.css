@@ -8,14 +8,14 @@
 }
 
 #flexbox div{
-    width: 200px;
+    width: 220px;
     height: 200px;
     background-color: grey;
     padding: 40px;
     border-radius: 15px;
 }
 #flexbox div img{
-    width: 80%;
+    width: 90%;
    height: 80%
 }
 
@@ -47,6 +47,13 @@ h1{
 }
 
 .damn{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+}
+.RMFC{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
