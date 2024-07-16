@@ -1,26 +1,52 @@
 #flexbox{
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
     flex-direction: row;
-    text-align: center;
-    gap: 20px;
-}
-
-#flexbox div{
-    width: 220px;
-    height: 200px;
-    background-color: grey;
-    padding: 40px;
-    border-radius: 15px;
-}
-#flexbox div img{
-    width: 90%;
-   height: 80%
+    flex-wrap: wrap;
+    justify-content: center;
+    
 }
 
 h1{
+    border-style: dashed;
+    border-color: whitesmoke;
     margin: 0;
+    background-color: gold;
+    width: 150px;
+    transition: 3s;
+
+    animation-name: multiplecolors;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes colorswitch{
+    from{background-color: gold;}
+    to{background-color: blue;}
+}
+
+@keyframes multiplecolors{
+    0%{background-color: rgb(228, 157, 157);}
+    25%{background-color: rgb(228, 240, 280); color: gold;}
+    50%{background-color: rgb(150, 500, 200);}
+    75%{background-color: rgb(180, 400, 190);}
+    100%{background-color: rgb(290, 100, 300);}
+}
+
+h1:hover{
+    width: 300px;
+    
+}
+
+img{
+    width: 200px;
+    height: 200px;
+    transition: width 2s height 4s;
+}
+
+img:hover{
+    width: 400px;
+    height: 400px;
+    transition: 4s;
 }
 
 .Rb24{
